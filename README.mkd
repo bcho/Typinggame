@@ -1,0 +1,15 @@
+# Typing Game
+
+## Goals:
+
+- [ ] Levels:
+
+  1. Each letter appear in the position that match the qwert layouts.
+
+  2. Each letter appear in random position.
+
+  3. Each letter appear in the reverse position of qwert layouts.
+
+- [ ] No duplicate letters.
+
+- [ ] Local records.

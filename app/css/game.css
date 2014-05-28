@@ -5,7 +5,7 @@ body {
   font-family:"sans-serif","arial";
 }
 
-.bubb {
+.bubble {
   position: absolute;
   width:30px;
   height:30px;
@@ -17,7 +17,7 @@ body {
   padding:5px;
 }
 
-#score {
+.game-score {
   font-size:80px;
   top: 25px;
   right: 50px;
@@ -25,7 +25,7 @@ body {
   text-align:right;
 }
 
-#time {
+.game-time {
   font-size:50px;
   top:120px;
   right:50px;
@@ -33,47 +33,36 @@ body {
   text-align:right;
 }
 
-#start {
+.game-start, 
+.game-over {
   padding: 10px 25px;
   text-align: center;
-  font-style:bold;
-  font-size:16px;
-  background-color:#dedede;
-  color:#000;
-  border-radius:20px;
-  -webkit-border-radius:20px;
-  -moz-border-radius:20px;
-  position:absolute;
+  font-weight: bold;
+  z-index: 100;
+  font-size: 16px;
+  background-color: #dedede;
+  color: #000;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  position: absolute;
+  display: none;
 }
 
-#start:hover {
+.game-start:hover, 
+.game-over:hover {
   cursor:pointer;
 }
 
-#timeUp {
-  padding: 10px 25px;
-  text-align: center;
-  font-style:bold;
-  z-index:100;
-  font-size:16px;
-  background-color:#dedede;
-  color:#000;
-  border-radius:20px;
-  -webkit-border-radius:20px;
-  -moz-border-radius:20px;
-  position:absolute;
-  display:none;
-}
-
-#timeUp:hover {
-  cursor:pointer;
-}
-
-#backgound {
+.game-board {
   width:100%;
   height:100%;
   z-index:99;
   display:none;
   background:rgba(121, 121, 124, 0.4);
   position:absolute;
+}
+
+.hide {
+  display: none;
 }

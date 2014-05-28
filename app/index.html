@@ -5,13 +5,23 @@
     <title>Typing Game</title>
     <link rel="stylesheet" href="css/game.css">
 </head>
-<body>
-    <div id="background"></div>
-    <div id="score">0</div>
-    <div id="time">20</div>
-    <div id="start">Start</div>
-    <div id="timeUp">Time up! Try again!</div>
+<body class="typing-game">
+    <div class="game-board">
+        <script class="game-bubble-tmpl" type="text/html">
+            <span class="bubble bubble-<%= letter %>" style="left: <%= x %>px; top: <%= y%>px; background-color: <%= color %>; display: <%= display %>"><%= letter %></span>
+        </script>
+    </div>
+    <div class="game-score"></div>
+    <div class="game-time"></div>
+    <div class="game-start">
+        <a class="game-start-button">Start</a>
+    </div>
+    <div class="game-over">
+        <a class="game-over-button">Game over! Try again!</a>
+    </div>
+    <div class="game-leaders-board"></div>
 </body>
 <script src="scripts/jquery.min.js"></script>
+<script src="scripts/underscore.js"></script>
 <script src="scripts/game.js"></script>
 </html>
